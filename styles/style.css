@@ -154,7 +154,6 @@
         background-repeat: no-repeat;
         background-position: center;
         height: stretch;
-        overflow-y: auto;
     }
     .about-stats-mobile{
         display: block;
