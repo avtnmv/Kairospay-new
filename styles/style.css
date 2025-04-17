@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Montserrat';
+}
+@font-face {
+    font-family: 'Furore';
+    src: url('../fonts/Furore.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+.logo img{
+    width: 112px;
+    height: 28px;
+    display: block;
+    margin: auto;
+}
+.logo{
+    display: block;
+    padding-top: 20px;
+    display: none;
+}
+.wrapper{
+    background-image: url(../images/bg-desktop.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    overflow-y: hidden;
+}
+.title-container{
+    margin-bottom: 390px;
+}
+.paragraph{
+    font-family: 'Montserrat';
+    color: #FFFFFF;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 22px;
+    text-align: center;
+    padding-top: 48px;
+}
+.color{
+    color: #D8B576;
+}
+.title{
+    font-family: 'Furore';
+    font-size: 80px;
+    font-weight: 400;
+    text-align: center;
+    background: linear-gradient(89.74deg, rgba(255, 255, 255, 0.7) 25.95%, rgba(0, 0, 0, 0.7) 99.77%), #FFFFFF;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+.blur-container{
+    background-image: url(../images/blur.svg);
+    background-repeat: no-repeat;
+    width: 865px;
+    height: 240px;
+    backdrop-filter: blur(10px);
+
+}
+
+.about__stats{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 320px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+
+}
+.stats__item{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.stats__value{
+    font-size: clamp(37px, 5vw, 69px);
+
+}
+.first-link{
+    background-image: url(../images/link-bg.svg);
+    width: 305px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-weight: 500;
+    gap: 10px;
+}
+.second-link{
+    background-image: url(../images/link-second-bg.svg);
+    width: 305px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 500;
+    gap: 10px;
+}
+.links-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.paragraph-two{
+    font-family: 'Montserrat';
+    color: #FFFFFF;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 24px;
+    padding-bottom: 20px;
+}
+.paragraph-three{
+    width: 283px;
+    height: 34px;
+    font-size: 14px;
+    color: #FFFFFF;
+    padding-top: 20px;
+    text-align: center;
+    margin-left: 120px;
+}
+.paragraph-mobile{
+    text-transform: uppercase;
+    width: 308px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: auto;
+    font-size: 16px;
+}
+.about-stats-mobile{
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .wrapper{
+        background-image: url(../images/bg-mobile.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100vh;
+        overflow-y: scroll;
+    }
+    .about-stats-mobile{
+        display: block;
+    }
+    .logo{
+        display: block;
+    }
+    .paragraph{
+        font-size: 16px;
+        padding-top: 15px;
+        padding-bottom: 10px;
+    }
+    .title{
+        font-size: 39px;
+        width: 360px;
+    margin: auto;
+    }
+    .about__stats{
+        display: none;
+    }
+    .title-container{
+        margin-bottom: 280px;
+    }
+    .blur-container-mobile{
+        background-image: url(../images/blur-mobile.svg);
+        background-repeat: no-repeat;
+        width: 340px;
+        height: 270px;
+        margin: auto;
+    }
+    .links-container{
+        flex-direction: column;
+        gap: 15px;
+    }
+    .paragraph-three{
+        margin: auto;
+        height: unset;
+        padding-bottom: 15px;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 0.9;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.first-link, .second-link {
+    animation: pulse 2s infinite;
+}
