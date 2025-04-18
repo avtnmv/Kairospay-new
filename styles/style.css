@@ -44,6 +44,7 @@
 }
 .color{
     color: #D8B576;
+    font-weight: 500;
 }
 .title{
     font-family: 'Furore';
@@ -146,7 +147,9 @@
 .about-stats-mobile{
     display: none;
 }
-
+.underline{
+    text-decoration: underline;
+}
 @media (max-width: 1200px) {
     .wrapper{
         background-image: url(../images/bg-mobile1.png);
